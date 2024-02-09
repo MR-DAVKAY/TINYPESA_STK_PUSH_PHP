@@ -2,7 +2,7 @@
 if (isset($_POST['submit']))
 {
 
-    $amount = '300'; // Amount to transact
+    $amount = $_POST['amount']; // Amount to transact
     $phonenuber = $_POST['phone']; // Phone number paying
     $Account_no = 'VELELAZE SOFTWARES'; // Enter account number (optional)
     $url = 'https://tinypesa.com/api/v1/express/initialize';
